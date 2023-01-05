@@ -1,13 +1,18 @@
 import React from "react";
+import './App.css'
 
 
-function App() {
-  return (
-    
+export default function App() {
+  return (    
       <>
-        test
+          <h1>React Dersleri</h1>
+          <Hosgeldiniz  isim="Enes"/>
       </>
   );
 }
 
-export default App;
+
+function Hosgeldiniz(props) {
+  console.log(props)
+  return <div>HoşGeldiniz </div>
+}
